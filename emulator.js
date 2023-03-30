@@ -2153,6 +2153,8 @@ var upCode = 38,
     rightCode = 39,
     startCode = 65,
     selectCode = 83,
+    selectMode0 = 10,
+    selectMode1 = 11,
     aCode = 88,
     bCode = 90;
 
@@ -2175,7 +2177,9 @@ function gb_OnKeyDown_Event(e) {
       case 'a-input': aCode = e.which; break;
       case 'b-input': bCode = e.which; break;
       case 'start-input': startCode = e.which; break;
-      case 'select-input': selectCode = e.which; break;     
+      case 'select-input': selectCode = e.which; break;
+      case 'select-mode-0': selectMode0 = e.which; break; 
+      case 'select-mode-1': selectMode1 = e.which; break;  
     }
     customKeyId = 0;
   }  
@@ -3318,7 +3322,9 @@ document.addEventListener("keydown", function(event) {
     document.dispatchEvent(a_down);
     document.dispatchEvent(a_press);
     console.log("x");
-    
+    startCode = 83;
+    selectCode = 65;
+
     gbPin15&=0xFE;
     MEMW(_IF_,gbRegIF|16);  
   }
@@ -3331,6 +3337,8 @@ document.addEventListener("keyup", function(event) {
     document.dispatchEvent(a_press);
     console.log("x");
     
+    startCode = 83;
+    selectCode = 65;
     gbPin15|=1;
     MEMW(_IF_,gbRegIF|16);
   }

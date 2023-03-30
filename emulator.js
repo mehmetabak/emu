@@ -3319,7 +3319,8 @@ document.addEventListener("keydown", function(event) {
     document.dispatchEvent(a_press);
     console.log("x");
     
-    gbPin15&=0xFE; MEMW(_IF_,gbRegIF|16);
+    gbPin15&=0xFE;
+    MEMW(_IF_,gbRegIF|16);  
   }
 });
 document.addEventListener("keyup", function(event) {
@@ -3330,7 +3331,8 @@ document.addEventListener("keyup", function(event) {
     document.dispatchEvent(a_press);
     console.log("x");
     
-    gbPin15|=1;    MEMW(_IF_,gbRegIF|16);
+    gbPin15|=1;
+    MEMW(_IF_,gbRegIF|16);
   }
 });
 

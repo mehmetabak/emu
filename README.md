@@ -1,12 +1,12 @@
 # GBOnline
 
-[Play GameBoy Online](https://rafaelcastrocouto.github.io/gbonline/ "Play")
+[Play GameBoy Online](https://memoli0.github.io/emu/ "Play")
 
 ============
 
   **Credits:**
   
- * Emulator: [Pedro Ladaria](https://memoli0.github.io/emu/)
+ * Emulator: [Pedro Ladaria](http://www.codebase.es/jsgb/)
   
  * Style: [Murat](http://codepen.io/AntonEssenetial/details/trlfu)
   

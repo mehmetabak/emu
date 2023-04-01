@@ -3329,6 +3329,7 @@ document.addEventListener("keydown", function(event) {
     MEMW(_IF_,gbRegIF|16);  
   }
 });
+
 document.addEventListener("keyup", function(event) {
   if (event.code === "Digit1") {
     var a_down = new KeyboardEvent('keydown', {'key': 'a'});
@@ -3343,4 +3344,21 @@ document.addEventListener("keyup", function(event) {
     MEMW(_IF_,gbRegIF|16);
   }
 });
+
+const closeButton = document.querySelector('.mac-button.close');
+const minimizeButton = document.querySelector('.mac-button.minimize');
+const zoomButton = document.querySelector('.mac-button.zoom');
+
+closeButton.addEventListener('click', () => {
+  window.close();
+});
+
+minimizeButton.addEventListener('click', () => {
+  window.open('https://github.com/memoli0/emu', '_blank');
+});
+
+zoomButton.addEventListener('click', () => {
+  location.reload();
+});
+
 

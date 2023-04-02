@@ -3381,7 +3381,7 @@ buttonRight.addEventListener('click', () => {
   console.log("xz");
   content.scrollTop += 50;
   content.scroll({
-    top: list.scrollTop + 50,
+    top: content.scrollTop + 50,
     left: 0,
     behavior: 'smooth'
   });

@@ -3382,3 +3382,24 @@ buttonRight.addEventListener('click', () => {
   content.scrollTop += 50;
 });
 
+
+content.addEventListener("touchstart", (event) => {
+  startY = event.touches[0].clientY;
+});
+
+content.addEventListener("touchmove", (event) => {
+  event.preventDefault();
+  endY = event.touches[0].clientY;
+  deltaY = endY - startY;
+  content.scrollBy({
+    top: -deltaY * 0.25,
+    behavior: "auto"
+  });
+});
+
+content.addEventListener("touchend", () => {
+  content.scrollBy({
+    top: 0,
+    behavior: "smooth"
+  });
+});

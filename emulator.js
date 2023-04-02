@@ -3392,8 +3392,14 @@ content.addEventListener("touchmove", (event) => {
   endY = event.touches[0].clientY;
   deltaY = endY - startY;
   content.scrollBy({
-    top: -deltaY * 0.77,
+    top: -deltaY * 0.7,
     behavior: "auto"
   });
 });
 
+content.addEventListener("touchend", () => {
+  content.scrollBy({
+    top: 0,
+    behavior: "auto"
+  });
+});

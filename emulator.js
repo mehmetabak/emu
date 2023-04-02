@@ -3367,7 +3367,7 @@ zoomButton.addEventListener('click', () => {
 buttonLeft.addEventListener('click', () => {
   content.scrollBy({
     top: -25,
-    behavior: "smooth"
+    behavior: "auto"
   });
   content.scrollTop -= 25;
   console.log("xy");
@@ -3376,7 +3376,7 @@ buttonLeft.addEventListener('click', () => {
 buttonRight.addEventListener('click', () => {
   content.scrollBy({
     top: 50,
-    behavior: "smooth"
+    behavior: "auto"
   });
   console.log("xz");
   content.scrollTop += 50;

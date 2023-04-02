@@ -3348,6 +3348,9 @@ document.addEventListener("keyup", function(event) {
 const closeButton = document.querySelector('.mac-button.close');
 const minimizeButton = document.querySelector('.mac-button.minimize');
 const zoomButton = document.querySelector('.mac-button.zoom');
+const content = document.querySelector('.game-list');
+const buttonLeft = document.querySelector('.button-left');
+const buttonRight = document.querySelector('.button-right');
 
 closeButton.addEventListener('click', () => {
   window.close();
@@ -3361,4 +3364,21 @@ zoomButton.addEventListener('click', () => {
   location.reload();
 });
 
+buttonLeft.addEventListener('click', () => {
+  content.scrollBy({
+    top: -25,
+    behavior: "smooth"
+  });
+  content.scrollTop -= 25;
+  console.log("xy");
+});
+
+buttonRight.addEventListener('click', () => {
+  content.scrollBy({
+    top: 50,
+    behavior: "smooth"
+  });
+  console.log("xz");
+  content.scrollTop += 50;
+});
 

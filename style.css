@@ -120,6 +120,43 @@ body, input, select {
   cursor: pointer;
 }
 
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 180px;
+  background-color: transparent;
+  border-radius: 25px;
+  padding: 0 10px;
+}
+
+.button-left, .button-right {
+  width: 100px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-left {
+  margin-right: 10px;
+}
+
+.button-right {
+  margin-left: 10px;
+}
+
+.button-left:hover {
+  cursor: pointer;
+}
+
+.button-right:hover {
+  cursor: pointer;
+}
+
 
 
 

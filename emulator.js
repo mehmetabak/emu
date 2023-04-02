@@ -3380,6 +3380,7 @@ buttonRight.addEventListener('click', () => {
   });
   console.log("xz");
   content.scrollTop += 50;
+  content.scrollTo(content.scrollTop + 50);
 });
 
 

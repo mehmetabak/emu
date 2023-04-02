@@ -180,6 +180,7 @@ body, input, select {
   transition: all 0.2s;
   transform: scale(0.9) rotate(6deg);
   margin-bottom: 10px;  
+  margin-right: 2em;
 }
 
 .cartridge:hover, .cartridge.active {

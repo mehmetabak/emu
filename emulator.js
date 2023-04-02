@@ -3375,7 +3375,7 @@ buttonLeft.addEventListener('click', () => {
 
 buttonRight.addEventListener('click', () => {
   content.scrollBy({
-    top: 50,
+    top: +50,
     behavior: "smooth"
   });
   console.log("xz");

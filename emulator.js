@@ -3375,7 +3375,7 @@ buttonLeft.addEventListener('click', () => {
 
 buttonRight.addEventListener('click', () => {
   content.scrollBy({
-    top: +50,
+    top: 50,
     behavior: "smooth"
   });
   console.log("xz");
@@ -3397,9 +3397,3 @@ content.addEventListener("touchmove", (event) => {
   });
 });
 
-content.addEventListener("touchend", () => {
-  content.scrollBy({
-    top: 0,
-    behavior: "auto"
-  });
-});

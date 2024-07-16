@@ -3357,7 +3357,7 @@ closeButton.addEventListener('click', () => {
 });
 
 minimizeButton.addEventListener('click', () => {
-  window.open('https://github.com/memoli0/emu', '_blank');
+  window.open('https://github.com/mehmetabak/emu', '_blank');
 });
 
 zoomButton.addEventListener('click', () => {
